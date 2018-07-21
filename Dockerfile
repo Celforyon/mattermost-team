@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 # Some ENV variables
 ENV PATH="/mattermost/bin:${PATH}"
-ENV MM_VERSION=5.0.1
+ENV MM_VERSION=5.1.0
 
 # Build argument to set Mattermost edition
 ARG edition=team
