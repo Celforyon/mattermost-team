@@ -1,8 +1,12 @@
 FROM ubuntu:16.04
 
+LABEL maintainer="Alexis Pereda <alexis@pereda.fr>"
+LABEL version="5.3.0"
+LABEL description="Container with mattermost (team)"
+
 # Some ENV variables
 ENV PATH="/mattermost/bin:${PATH}"
-ENV MM_VERSION=5.1.1
+ENV MM_VERSION=5.3.0
 
 # Build argument to set Mattermost edition
 ARG edition=team
