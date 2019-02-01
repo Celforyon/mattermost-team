@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 LABEL maintainer="Alexis Pereda <alexis@pereda.fr>"
-LABEL version="5.6.4"
+LABEL version="5.7.1"
 LABEL description="Container with mattermost (team)"
 
 # Some ENV variables
