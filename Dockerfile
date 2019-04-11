@@ -1,12 +1,12 @@
 FROM alpine:3.9
 
 LABEL maintainer="Alexis Pereda <alexis@pereda.fr>"
-LABEL version="5.8.0"
+LABEL version="5.8.1"
 LABEL description="Container with mattermost (team)"
 
 # Some ENV variables
 ENV PATH="/mattermost/bin:${PATH}"
-ENV MM_VERSION=5.8.0
+ENV MM_VERSION=5.8.1
 
 # Build argument to set Mattermost edition
 ARG edition=team
@@ -49,7 +49,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 WORKDIR /mattermost
 CMD ["mattermost"]
 
-# Expose port 80 of the container
+# Expose port 8000 of the container
 EXPOSE 8000
 
 # Use a volume for the data directory
