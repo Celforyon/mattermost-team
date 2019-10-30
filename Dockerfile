@@ -1,12 +1,12 @@
 FROM alpine:3.9
 
 LABEL maintainer="Alexis Pereda <alexis@pereda.fr>"
-LABEL version="5.16.0"
+LABEL version="5.16.2"
 LABEL description="Container with mattermost (team)"
 
 # Some ENV variables
 ENV PATH="/mattermost/bin:${PATH}"
-ENV MM_VERSION=5.16.0
+ENV MM_VERSION=5.16.2
 
 # Build argument to set Mattermost edition
 ARG edition=team
